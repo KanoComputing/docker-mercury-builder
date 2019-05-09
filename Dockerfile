@@ -2,10 +2,10 @@
 #  Dockerfile to build a Ubuntu box to build / test Kano Mercury software
 #
 
-FROM ubuntu:18.04
+FROM debian:buster
 
 # APT Dependencies to build and test Mercury
-ENV APT_DEPENDENCIES="build-essential cmake lcov python-pip"
+ENV APT_DEPENDENCIES="git-core build-essential cmake lcov python-pip"
 
 # PIP Dependencies to build Mercury
 ENV PIP_DEPENDENCIES="conan"
