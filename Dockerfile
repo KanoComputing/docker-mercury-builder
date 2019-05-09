@@ -1,5 +1,5 @@
 #
-#  Dockerfile to build a Ubuntu box to build / test Kano Mercury software
+#  Dockerfile to build a Debian Buster box to build / test Kano Mercury software
 #
 
 FROM debian:buster
@@ -15,3 +15,8 @@ RUN apt-get update && \
     apt-get install -y $APT_DEPENDENCIES
 
 RUN pip install $PIP_DEPENDENCIES
+
+ENV HOME /home/mercury
+USER mercury
+WORKDIR $HOME
+RUN git clone https://github.com/KanoComputing/mercury.git
