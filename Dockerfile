@@ -1,4 +1,4 @@
-FROM kanocomputing/mercury-builder
+FROM ubuntu:18.04
 
 # APT Dependencies to build and test Mercury
 ENV APT_DEPENDENCIES="build-essential cmake lcov python-pip"
