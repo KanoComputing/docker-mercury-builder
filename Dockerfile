@@ -16,6 +16,7 @@ RUN apt-get update && \
 
 RUN pip install $PIP_DEPENDENCIES
 
+RUN useradd -ms /bin/bash mercury
 ENV HOME /home/mercury
 USER mercury
 WORKDIR $HOME
