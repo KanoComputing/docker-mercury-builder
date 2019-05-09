@@ -20,4 +20,3 @@ RUN useradd -ms /bin/bash mercury
 ENV HOME /home/mercury
 USER mercury
 WORKDIR $HOME
-RUN git clone https://github.com/KanoComputing/mercury.git
