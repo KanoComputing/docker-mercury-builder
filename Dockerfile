@@ -1,3 +1,7 @@
+#
+#  Dockerfile to build a Ubuntu box to build / test Kano Mercury software
+#
+
 FROM ubuntu:18.04
 
 # APT Dependencies to build and test Mercury
