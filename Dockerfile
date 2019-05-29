@@ -5,7 +5,7 @@
 FROM debian:buster
 
 # APT Dependencies to build and test Mercury
-ENV APT_DEPENDENCIES="git-core build-essential cmake lcov python-pip"
+ENV APT_DEPENDENCIES="git-core build-essential cmake lcov python-pip swig python3-pytest python3-dev"
 
 # PIP Dependencies to build Mercury
 ENV PIP_DEPENDENCIES="conan"
